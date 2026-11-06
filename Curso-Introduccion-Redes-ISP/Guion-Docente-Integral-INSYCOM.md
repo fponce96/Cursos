@@ -169,3 +169,81 @@ La autorización puede ser automática o mediante soporte. El instalador no nece
 ### Prueba final FTTH
 
 «No terminamos cuando prende una luz verde. Verificamos protección del drop, potencia, registro PON, enlace Ethernet, navegación, velocidad y documentación. Después necesitamos comprobar cómo el cliente usa la conexión dentro de su casa».
+
+## 6. Wi-Fi dentro del domicilio
+
+[Diagrama de casa con ONT, TV, habitaciones y paredes.]
+
+«Una fibra excelente no garantiza Wi-Fi excelente en toda la casa. La conexión del proveedor termina en la ONT; la cobertura inalámbrica depende de ubicación, paredes, interferencias y dispositivos.
+
+Cuando elegimos dónde instalar la ONT, preguntamos qué necesita el cliente. ¿Dónde está el televisor principal? ¿Hay una computadora fija? ¿Qué ambientes necesitan cobertura? Un televisor que consume mucho contenido puede funcionar más estable por Ethernet. Cablear equipos fijos reduce la competencia por airtime y la variación de latencia, aunque no significa que todo cable siempre mida más que cualquier Wi-Fi moderno.
+
+Nosotros recomendamos y explicamos. Pero el cliente decide la ubicación dentro de lo técnicamente seguro y viable. Si elige un lugar que perjudica cobertura, lo explicamos sin discutir y documentamos la decisión».
+
+### Bandas y señal
+
+«En 2,4 GHz generalmente tenemos más alcance y más interferencias; en 5 GHz suele haber más capacidad cerca del equipo y menor alcance. Algunos equipos también usan 6 GHz.
+
+Volvemos a la recta numérica: −45 dBm suele ser fuerte, −60 bueno, −75 débil y −85 muy débil. Son referencias, no sentencias: el ruido y el dispositivo también importan».
+
+### Extender Wi-Fi
+
+«Si una habitación no recibe bien, primero verificamos señal y necesidades. Un AP cableado suele ser una excelente solución. Mesh con backhaul cableado también. Un repetidor puede ayudar si recibe buena señal, pero no puede crear calidad donde no la recibe y puede consumir más airtime.
+
+No recomendamos cambiar el plan de Internet o reemplazar la ONT automáticamente por un problema de cobertura».
+
+### Speedtest
+
+«¿Un Speedtest lento demuestra que el proveedor entrega menos velocidad? No necesariamente. Depende del dispositivo, el puerto, la banda Wi-Fi, otras descargas y el servidor.
+
+Para evaluar el acceso empezamos, cuando se puede, por Ethernet con equipo capaz y enlace Gigabit si queremos medir más de 100 Mbps. Luego probamos Wi-Fi. Miramos descarga, subida, ping y repetimos resultados anómalos.
+
+Caso: plan de 300 Mbps. Ethernet 290, Wi-Fi cerca de la ONT 250, dormitorio 25. ¿Dónde investigarían primero? En la cobertura y condiciones Wi-Fi de la habitación».
+
+[Escuchar respuestas por Zoom.]
+
+## 7. Checklist y verificación final
+
+«¿Cuándo termina una instalación? No cuando la CPE se asocia, la ONT registra o el cliente abre YouTube. Termina cuando verificamos parámetros, funcionamiento real y documentación.
+
+Les propongo que cada uno construya su checklist: instalación física, señal o potencia, configuración, identificación, pruebas por cable, cobertura Wi-Fi y observaciones. No sirve marcar casilleros sin medir. La lista debe adaptarse a cada empresa».
+
+[Dar cinco minutos; escuchar dos o tres listas.]
+
+«Si no tenemos OTDR, microscopio o analizador, hacemos lo que sí podemos con nuestras herramientas, registramos limitaciones y escalamos lo que no podemos confirmar. Pedir ayuda es parte del diagnóstico».
+
+## 8. Preguntas frecuentes finales
+
+**¿Una señal fuerte siempre es buena?** «No; puede haber ruido, mala modulación o saturación».
+
+**¿La recepción local y remota deben coincidir?** «No necesariamente: son extremos distintos».
+
+**¿Discovery muestra todos los clientes asociados?** «No».
+
+**¿PON fija equivale a Internet?** «No; registro y servicio son etapas distintas».
+
+**¿Una ONT en −23 dBm está necesariamente fuera de norma?** «No universalmente; en nuestra referencia preventiva corresponde informarla».
+
+**¿NAP −19 y ONT −24?** «Cinco dB en último tramo: investigar drop y conectores».
+
+**¿NAP −24 y ONT −25?** «Poca pérdida local, pero señal débil desde distribución».
+
+**¿La roseta es obligatoria?** «Depende del procedimiento; proteger fibra sí es esencial».
+
+**¿El cliente puede elegir dónde poner la ONT?** «Sí, con asesoramiento y dentro de condiciones seguras».
+
+**¿Speedtest lento por Wi-Fi demuestra falla de fibra?** «No».
+
+## 9. Cierre
+
+[Diapositiva final INSYCOM.]
+
+«Quiero que se queden con una idea: un buen instalador no es solamente el que consigue que funcione. Es quien sabe interpretar lo que ve, reconocer una anomalía y comunicarla.
+
+Tal vez mañana revisen una modulación, una potencia, una curva del drop o una habitación con poca cobertura antes de retirarse. Ese minuto extra puede evitar un reclamo futuro.
+
+**El reclamo no empieza con el cliente.** Muchas veces empieza mucho antes, en algo que podríamos haber detectado.
+
+Gracias por participar. Ahora dejamos espacio para preguntas y experiencias».
+
+[INSYCOM puede orientar consultas preliminares; los trabajos detallados de ingeniería se evalúan aparte, sin convertir el cierre en publicidad.]
