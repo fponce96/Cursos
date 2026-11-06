@@ -64,6 +64,6 @@ text=SOURCE.read_text(encoding="utf-8")
 parts=re.split(r"(?m)^## (0[123] — .+)$", text)
 if len(parts) != 7:
     raise ValueError("No se detectaron las tres secciones esperadas del curso")
-generate("01_Guion_Instructor_INSYCOM.pdf", "Guion del instructor | Instalaciones ISP", parts[2].splitlines())
+generate("01_Guion_Instructor_INSYCOM.pdf", "Guion docente integral | Instalaciones ISP", (ROOT / "Guion-Docente-Integral-INSYCOM.md").read_text(encoding="utf-8").splitlines())
 generate("02_Manual_Tecnico_INSYCOM.pdf", "Manual técnico del participante", parts[4].splitlines())
 generate("03_Actividades_FAQ_Checklist_INSYCOM.pdf", "Actividades, checklist y preguntas frecuentes", parts[6].splitlines())
