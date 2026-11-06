@@ -14,7 +14,7 @@ Este documento contendrá el guion completo, desarrollado para Zoom.
 
 Mi nombre es **Facundo Ponce**. Soy **cofundador de INSYCOM junto con Héctor** y, dentro de la empresa, me desempeño como **ingeniero principal de infraestructura**.
 
-Trabajo en redes de proveedores de Internet, redes empresariales e infraestructura de redes móviles. También soy instructor de redes y cuento con certificaciones de **MikroTik, MTCNA y MTCNC; Cisco CCNA; y Huawei**.
+Trabajo en redes de proveedores de Internet, redes empresariales e infraestructura de redes móviles. También soy instructor de redes y cuento con certificaciones de **MikroTik (MTCNA y MTCNC), Cisco CCNA y Huawei**, además de la certificación de ciberseguridad **OCCP**. También soy **Fortinet Partner**.
 
 Gran parte de lo que vamos a conversar hoy viene del trabajo en campo, de instalaciones, mantenimiento, diagnóstico y de situaciones reales que aparecen cuando una red empieza a tener problemas. Por eso quiero que este espacio sea práctico: que podamos hablar de lo que vemos en los equipos y de lo que nos pasa cuando estamos frente a un cliente».
 
