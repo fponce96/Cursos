@@ -6,21 +6,39 @@ El reclamo no empieza con el cliente.
 
 Este documento contendrá el guion completo, desarrollado para Zoom.
 
-## 1. Presentaciones y apertura
+## 1. Presentación del instructor y de INSYCOM
 
-[Portada: INSYCOM — Instructor Facundo Ponce]
+[Diapositiva de portada: logotipo INSYCOM, nombre del curso, lema e instructor Facundo Ponce.]
 
-«Buenas, ¿cómo están? Antes de arrancar, me gustaría conocerlos un poquito. ¿De dónde son? ¿Trabajan con Wireless, FTTH o ambas? ¿Cuánto tiempo llevan haciendo instalaciones?».
+«Buenas, ¿cómo están? Bienvenidos a esta capacitación. Antes de meternos en los temas técnicos, quiero presentarme y contarles quiénes somos y por qué decidimos preparar este curso.
 
-[Escuchar dos o tres respuestas.]
+Mi nombre es **Facundo Ponce**. Soy **cofundador de INSYCOM junto con Héctor** y, dentro de la empresa, me desempeño como **ingeniero principal de infraestructura**.
 
-«La idea de este curso no es convertirnos en ingenieros. Queremos entender qué estamos mirando cuando instalamos un servicio y reconocer las señales de que algo puede fallar.
+Trabajo en redes de proveedores de Internet, redes empresariales e infraestructura de redes móviles. También soy instructor de redes y cuento con certificaciones de **MikroTik, MTCNA y MTCNC; Cisco CCNA; y Huawei**.
 
-¿A alguno le pasó que instaló, el cliente abrió una página, todo parecía andar y a los pocos días llegó un reclamo? A veces la antena conectaba pero modulaba mal. O la ONT registraba pero la potencia estaba baja. O Internet llegaba bien por cable, pero el Wi-Fi no alcanzaba la habitación donde se usaba.
+Gran parte de lo que vamos a conversar hoy viene del trabajo en campo, de instalaciones, mantenimiento, diagnóstico y de situaciones reales que aparecen cuando una red empieza a tener problemas. Por eso quiero que este espacio sea práctico: que podamos hablar de lo que vemos en los equipos y de lo que nos pasa cuando estamos frente a un cliente».
 
-Por eso elegimos una frase: **El reclamo no empieza con el cliente**. Muchas veces podemos detectar problemas antes de que el cliente reclame. No siempre los vamos a poder resolver, pero sí medir, registrar y comunicar».
+[Pausa breve. Mostrar diapositiva de INSYCOM.]
 
-[Pregunta: «¿Alguna vez vieron algo que no estaba bien aunque el servicio funcionara?»]
+«Ahora, ¿qué es INSYCOM? Somos una empresa dedicada a infraestructura y servicios de telecomunicaciones. Trabajamos con **redes ISP, redes empresariales e infraestructura de redes móviles**.
+
+Actualmente, una parte de nuestro trabajo consiste en **proveer infraestructura, alquilar puertos PON y comercializar conectividad a Internet al por mayor**. Es decir, nuestro enfoque en esa actividad no está en vender Internet directamente al usuario final, sino en brindar infraestructura y capacidad a otros prestadores.
+
+Esto nos permite ver la red desde una perspectiva un poco más amplia: no solamente el equipo que se instala en una casa, sino también lo que ocurre en la distribución, en los nodos, en los enlaces y en la infraestructura que hay detrás del servicio.
+
+Y justamente por eso quisimos hacer esta capacitación. Muchas veces el técnico que está instalando es la primera persona que puede detectar un problema que, si no se informa, después termina afectando al cliente o incluso a otros abonados».
+
+[Mostrar el lema.]
+
+«La idea que quiero que nos acompañe hoy es: **El reclamo no empieza con el cliente**. Si una potencia está fuera de los valores que utiliza la empresa, si una CPE modula mal, si una fibra tiene demasiada pérdida o si el Wi-Fi no cubre donde el cliente necesita, son cosas que podemos advertir antes de que llegue un reclamo.
+
+No significa que el instalador tenga que solucionar todo, ni que pueda cambiar parámetros de ingeniería sin autorización. Significa que tiene que saber observar, medir, documentar y avisar».
+
+### Presentación de los participantes
+
+«Ahora sí, me gustaría conocerlos un poquito. ¿De dónde son? ¿Trabajan principalmente con Wireless, FTTH o ambas tecnologías? ¿Hace cuánto están haciendo instalaciones?».
+
+[Escuchar dos o tres respuestas o usar el chat si el grupo es grande.]
 
 «Cada operadora tiene sus equipos, presupuestos y procedimientos. No estamos acá para criticar eso ni imponer una única forma de trabajar. Queremos diagnosticar mejor dentro de la realidad de cada empresa».
 
