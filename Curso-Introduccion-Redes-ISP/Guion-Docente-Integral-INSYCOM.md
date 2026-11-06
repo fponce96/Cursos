@@ -137,3 +137,35 @@ Si contamos con microscopio y elementos adecuados, inspeccionamos y limpiamos si
 «El lápiz parece doblarse por refracción: la luz cambia dirección al pasar entre materiales. En fibra, la reflexión interna total, relacionada con los índices del núcleo y revestimiento, ayuda a guiar la luz. Si curvamos demasiado la fibra, podemos producir pérdidas.
 
 Respetamos el radio mínimo indicado por fabricante. Como ejemplo, algunos cables permiten radios del orden de 30 mm durante tendido y 15 mm instalados, pero no son valores universales. Radio no es diámetro».
+
+### Instalación del drop
+
+[Fotografías de tendidos, anclajes y reservas.]
+
+«Al instalar el drop cuidamos recorrido, tensión, viento, vanos, roces y entrada al domicilio. En algunos despliegues se utilizan vanos cercanos a 50–60 m como referencia conservadora, no como máximo universal. El diseño depende del cable y sus especificaciones.
+
+Algunas operadoras usan grampas; otras anclan el mensajero integrado de acero o aramida conforme a procedimientos aprobados. No vamos a imponer un único método, pero sí exigir que la fijación no dañe la fibra. La roseta también depende del operador: si no se usa, igual hay que proteger curvas y conectores».
+
+### Medir en NAP y ONT: tres casos
+
+«En nuestra referencia preventiva, una ONT peor que −22 dBm se informa aunque esté online. No es un límite universal GPON.
+
+Caso uno: NAP −18, ONT −19. Hay 1 dB de diferencia: el último tramo no muestra una pérdida llamativa.
+
+Caso dos: NAP −19, ONT −24. Hay 5 dB de pérdida. Investigamos drop, conectores, curvaturas y empalmes. En tramos cortos, más de 2 dB puede justificar revisión como criterio práctico, no absoluto.
+
+Caso tres: NAP −24, ONT −25. La diferencia local es de solo 1 dB, pero la señal ya llega débil a la NAP. Revisamos distribución aguas arriba, posiblemente con otros abonados afectados.
+
+Las mediciones deben compararse en la misma longitud de onda con instrumento adecuado».
+
+[Dejar que los participantes expliquen cada caso antes de dar la respuesta.]
+
+### Registro, LEDs y servicio
+
+«Una ONT puede recibir luz sin estar registrada, y estar registrada sin navegar. En muchos modelos LOS rojo indica pérdida de señal, PON intermitente búsqueda o registro y PON fijo registro; pero los LEDs varían según fabricante.
+
+La autorización puede ser automática o mediante soporte. El instalador no necesariamente configura la OLT. Si la ONT no registra, verificamos potencia y entregamos serial o identificador a la mesa de ayuda. Si registra pero no navega, revisamos provisión y conectividad según el procedimiento».
+
+### Prueba final FTTH
+
+«No terminamos cuando prende una luz verde. Verificamos protección del drop, potencia, registro PON, enlace Ethernet, navegación, velocidad y documentación. Después necesitamos comprobar cómo el cliente usa la conexión dentro de su casa».
