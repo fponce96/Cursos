@@ -101,3 +101,39 @@ Como referencias de campo, ciertos AP básicos pueden funcionar bien con unos 10
 [Escuchar propuestas.]
 
 «¿Más TX es siempre mejor? No. ¿Discovery cuenta todos los clientes? No. ¿Si la CPE conecta está todo terminado? Tampoco. Lo que no podamos resolver, lo registramos y escalamos».
+
+## 5. FTTH — Desde la OLT hasta la ONT
+
+[Diagrama: OLT → ODF → splitter PLC → NAP → drop → roseta opcional → ONT.]
+
+«Ahora cambiamos de tecnología. En vez de ondas de radio, la información viaja mediante luz por una fibra. Para diagnosticar, necesitamos conocer el recorrido completo. Puede haber uno, dos o más niveles de splitters según la ingeniería, no necesariamente tres».
+
+### GPON, turnos y longitudes de onda
+
+«Varias ONT comparten un puerto PON. Si todas hablaran al mismo tiempo hacia la OLT, se superpondrían. La OLT organiza turnos de subida, lo que relacionamos con TDMA, y puede asignar capacidad dinámicamente mediante DBA.
+
+En GPON clásico, la OLT transmite hacia las ONT en 1490 nm y recibe en 1310 nm; la ONT hace lo contrario. Algunas redes agregan 1550 nm para CATV. Son como idiomas distintos para cada dirección. Podemos transmitir y recibir simultáneamente usando longitudes diferentes, aunque el ascendente se comparte por turnos».
+
+[Pregunta: «¿Qué longitud recibe normalmente la ONT?» 1490 nm.]
+
+«Un medidor óptico común puede medir la potencia descendente si soporta la longitud adecuada. Para medir correctamente la transmisión ascendente en ráfagas hace falta un medidor PON en línea con una ONT activa. Nunca mirar dentro de una fibra que pueda estar activa».
+
+### Presupuesto óptico
+
+«La potencia TX depende de la clase óptica del equipo. Cada splitter introduce una pérdida esperada. Como ejemplos: 1:2 unos 3,5–4 dB; 1:4 unos 7–7,5; 1:8 unos 10–11; 1:16 unos 13–14; 1:32 unos 16,5–18. También perdemos en fibra, conectores y empalmes. Comparar lo esperado con lo medido ayuda a localizar anomalías».
+
+### Conectores y limpieza
+
+[Mostrar fotografías SC, LC, FC, ST, E2000, MPO/MTP; APC y UPC.]
+
+«En FTTH vemos mucho SC/APC, generalmente verde. Otros equipos utilizan LC y otros formatos. No debemos unir pulidos APC con UPC. Una férula sucia o dañada puede producir pérdidas y reflexiones.
+
+Si contamos con microscopio y elementos adecuados, inspeccionamos y limpiamos siguiendo el procedimiento. Si solo tenemos power meter, podemos medir y comparar, pero reconocemos lo que no podemos confirmar. No vamos a afirmar que cualquier conector sucio perjudica a todos ni que necesariamente quema una óptica».
+
+### Refracción, reflexión y curvas
+
+[Mostrar lápiz dentro de vaso de agua.]
+
+«El lápiz parece doblarse por refracción: la luz cambia dirección al pasar entre materiales. En fibra, la reflexión interna total, relacionada con los índices del núcleo y revestimiento, ayuda a guiar la luz. Si curvamos demasiado la fibra, podemos producir pérdidas.
+
+Respetamos el radio mínimo indicado por fabricante. Como ejemplo, algunos cables permiten radios del orden de 30 mm durante tendido y 15 mm instalados, pero no son valores universales. Radio no es diámetro».
