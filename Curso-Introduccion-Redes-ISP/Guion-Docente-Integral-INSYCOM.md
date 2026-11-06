@@ -51,3 +51,53 @@ dBm expresa potencia; dB expresa una relación o diferencia. Si medimos −19 dB
 [Ejercicio: ordenar −45, −60 y −75. Esperar respuestas.]
 
 «No hace falta aprender logaritmos para interpretar la pantalla. Sí hay que saber qué se está midiendo».
+
+## 4. Wireless — El enlace tiene dos direcciones
+
+[Mostrar AP sectorial y CPE, flechas en ambos sentidos.]
+
+«Cuando instalamos una CPE, necesitamos que ella escuche al AP y que el AP la escuche. En airOS podemos encontrar la señal local y la remota. No son la misma medición. Una buena recepción en la CPE no demuestra que el AP reciba bien la subida».
+
+### Alineación y Fresnel
+
+«No alcanza con ver la torre. También tenemos que despejar, en lo posible, la zona de Fresnel alrededor de la línea de vista. Árboles, techos o estructuras pueden afectar el enlace. Y la antena debe quedar firme: si mañana gira con el viento, el reclamo ya empezó a gestarse».
+
+[Pregunta: «¿Una potencia aceptable garantiza una modulación estable?» No.]
+
+### TX y recepción remota
+
+«Pensemos en un aula. Yo soy el AP y los alumnos son CPE. Si un alumno cerca de mí grita, no necesariamente lo voy a entender mejor. El AP suele tener TX definido por ingeniería y no lo cambiamos por nuestra cuenta. Según el procedimiento, ajustamos TX de la CPE para que el AP la reciba adecuadamente.
+
+En algunas redes se busca como referencia interna alrededor de −55 a −60 dBm de recepción en AP. No es una regla universal. Si la remota está en −45 dBm, quizás corresponda bajar gradualmente el TX de la CPE, incluso probar unos 10 dB menos si el procedimiento lo admite, y volver a revisar señal, modulación y estabilidad.
+
+Subir la potencia al máximo no corrige obstáculos ni garantiza mejor descarga: el TX de la CPE influye principalmente en cómo la recibe el AP».
+
+### Airtime: los turnos para hablar
+
+«En esa aula hay diez alumnos. Si uno habla despacio o necesita repetir cada frase, ocupa más tiempo y los demás esperan. En Wireless compartimos tiempo de aire. Una CPE con baja modulación o muchas retransmisiones puede consumir más airtime para transportar los mismos datos y perjudicar a otros clientes».
+
+[Pregunta: «¿Importa solamente cuántos clientes hay asociados?» No: también su calidad y consumo.]
+
+### Modulación
+
+«Imaginen que podemos codificar más información en cada símbolo, como usar sobres con mayor capacidad. En 16-QAM y 256-QAM tenemos distintas cantidades de estados de símbolo, no paquetes individuales. Cuantos más estados distinguimos, más bits por símbolo podemos representar, pero necesitamos condiciones de señal y ruido adecuadas.
+
+Si la modulación local o remota cae, revisamos alineación, ruido, interferencia, obstáculos y potencias. No empezamos subiendo TX sin diagnóstico».
+
+### Sectores, capacidad y herramientas
+
+«Los AP pueden cubrir sectores de 30, 45, 60, 90 o más grados. En muchas redes se utilizan canales de 20 MHz para planificar reutilización. Un sector muy abierto puede concentrar más clientes, pero cada diseño es distinto.
+
+Como referencias de campo, ciertos AP básicos pueden funcionar bien con unos 10–15 abonados y equipos superiores con 30–40 o más, según carga y condiciones. No son límites garantizados. Discovery puede mostrar dispositivos visibles, SSID, MAC o IP, pero no es un conteo confiable de asociados. AirView, cuando está disponible, ayuda a observar espectro. Si sospechamos saturación, informamos con evidencia».
+
+### Configuración de CPE
+
+«Antes de irnos comprobamos modo Station, SSID y seguridad, ancho de 20 MHz y frecuencia Auto cuando así lo indique la operadora, IP, máscara, gateway, DNS, Device ID identificable, ubicación GPS si corresponde y nodo/AP asociado. Guardamos y verificamos reconexión, recepción local/remota y modulación. No modificamos parámetros de ingeniería sin autorización».
+
+### Actividad y FAQ Wireless
+
+«Tómense cinco minutos y armen su checklist: fijación, Fresnel, alineación, señales, modulación, identificación, configuración, prueba y documentación».
+
+[Escuchar propuestas.]
+
+«¿Más TX es siempre mejor? No. ¿Discovery cuenta todos los clientes? No. ¿Si la CPE conecta está todo terminado? Tampoco. Lo que no podamos resolver, lo registramos y escalamos».
